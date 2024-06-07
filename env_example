@@ -1,0 +1,7 @@
+GET_TOKEN_URL="http://127.0.0.1:10009/account/login"
+ADD_BOT_URL="http://127.0.0.1:10009/user/import/json"
+UPDATE_BOT_URL="http://127.0.0.1:10008/user/update"
+SEND_MSG_URL="http://127.0.0.1:10002/msg/send_msg"
+TOKEN_EXPIRE_DAYS=30
+MAX_HISTORY_SESSION_LENGTH=3
+SESSION_EXPIRE_SECONDS=1800
