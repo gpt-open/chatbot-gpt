@@ -1,0 +1,11 @@
+flask==3.0.2
+flask-cors==4.0.0
+werkzeug==3.0.3
+gunicorn==21.2.0
+loguru==0.7.2
+requests==2.31.0
+python-dotenv==1.0.1
+diskcache==5.6.3
+py3langid==0.2.2
+yml==0.0.1
+unionllm==0.1.4

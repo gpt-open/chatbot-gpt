@@ -1,0 +1,38 @@
+robots:
+  OpenAI:
+    - apiKey: "xxxx"
+      model: "gpt-3.5-turbo"
+      userID: "openai_robot1"
+      nickname: "ChatGPT 3.5"
+      faceURL: "https://openai.xiniushu.com/img/logo.png"
+    - apiKey: "xxxx"
+      model: "gpt-4o"
+      userID: "openai_robot2"
+      nickname: "ChatGPT 4o"
+      faceURL: "https://openai.xiniushu.com/img/logo.png"
+
+  ZhipuAI:
+    - apiKey: "xxxx"
+      model: "glm-3-turbo"
+      userID: "zhipuai_robot1"
+      nickname: "GLM-3"
+      faceURL: "https://pp.myapp.com/ma_icon/0/icon_54321899_1717467379/256"
+    - apiKey: "xxxx"
+      model: "glm-4"
+      userID: "zhipuai_robot2"
+      nickname: "GLM-4"
+      faceURL: "https://pp.myapp.com/ma_icon/0/icon_54321899_1717467379/256"
+
+  Moonshot:
+    - apiKey: "xxxx"
+      model: "moonshot-v1-32k"
+      userID: "moonshot_robot1"
+      nickname: "Moonshot-chat"
+      faceURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnsfyv3cjhrqvNb-Mos6InwLI4Pnjdxiw8CVtxA-tRSlRWwl-nba84&usqp=CAE&s"
+
+  Deepseek:
+    - apiKey: "xxxx"
+      model: "deepseek/deepseek-chat"
+      userID: "deepseek_robot1"
+      nickname: "Deepseek-chat"
+      faceURL: "https://avatars.githubusercontent.com/u/148330874?s=200&v=4"

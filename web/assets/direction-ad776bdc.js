@@ -1,0 +1,1 @@
+const F="֑-߿יִ-﷽ﹰ-ﻼ",t="A-Za-zÀ-ÖØ-öø-ʸ̀-֐ࠀ-῿‎Ⰰ-﬜︀-﹯﻽-￿",e=new RegExp("^[^"+t+"]*["+F+"]"),r=new RegExp("^[^"+F+"]*["+t+"]");function o(n){const u=String(n||"");return e.test(u)?"rtl":r.test(u)?"ltr":"neutral"}export{o as d};

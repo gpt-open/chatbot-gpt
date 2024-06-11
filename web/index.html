@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    /> -->
+    <title>OpenIM-GPT</title>
+    <script type="module" crossorigin src="./assets/index-3c264776.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/@babel-d99aad0a.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dff1db10.js">
+    <link rel="modulepreload" crossorigin href="./assets/parse-numeric-range-9242e1ec.js">
+    <link rel="modulepreload" crossorigin href="./assets/property-information-33d7f5d8.js">
+    <link rel="modulepreload" crossorigin href="./assets/space-separated-tokens-eedf1754.js">
+    <link rel="modulepreload" crossorigin href="./assets/comma-separated-tokens-495b557e.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-parse-selector-2e5db8ec.js">
+    <link rel="modulepreload" crossorigin href="./assets/hastscript-aed2bf9f.js">
+    <link rel="modulepreload" crossorigin href="./assets/character-entities-legacy-d39742d7.js">
+    <link rel="modulepreload" crossorigin href="./assets/character-reference-invalid-da0c882b.js">
+    <link rel="modulepreload" crossorigin href="./assets/is-decimal-dfcce753.js">
+    <link rel="modulepreload" crossorigin href="./assets/is-hexadecimal-f403e296.js">
+    <link rel="modulepreload" crossorigin href="./assets/is-alphabetical-ea837323.js">
+    <link rel="modulepreload" crossorigin href="./assets/is-alphanumerical-4b9c73ef.js">
+    <link rel="modulepreload" crossorigin href="./assets/decode-named-character-reference-29ded5ae.js">
+    <link rel="modulepreload" crossorigin href="./assets/parse-entities-886a4bc9.js">
+    <link rel="modulepreload" crossorigin href="./assets/refractor-f0b25896.js">
+    <link rel="modulepreload" crossorigin href="./assets/unist-util-is-7e122464.js">
+    <link rel="modulepreload" crossorigin href="./assets/unist-util-visit-parents-9b4d9404.js">
+    <link rel="modulepreload" crossorigin href="./assets/unist-util-visit-4a8cdef4.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-to-string-00227f59.js">
+    <link rel="modulepreload" crossorigin href="./assets/unist-util-filter-35bc8277.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-prism-plus-f8916250.js">
+    <link rel="modulepreload" crossorigin href="./assets/css-selector-parser-8b709f9f.js">
+    <link rel="modulepreload" crossorigin href="./assets/direction-ad776bdc.js">
+    <link rel="modulepreload" crossorigin href="./assets/devlop-d057c9d1.js">
+    <link rel="modulepreload" crossorigin href="./assets/bcp-47-match-575b2c5d.js">
+    <link rel="modulepreload" crossorigin href="./assets/boolbase-d6ee5218.js">
+    <link rel="modulepreload" crossorigin href="./assets/nth-check-c1dafc58.js">
+    <link rel="modulepreload" crossorigin href="./assets/zwitch-18fef54d.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-has-property-d1e39f7e.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-whitespace-675c549c.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-select-9331a119.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-rewrite-eb153844.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-attr-f923984d.js">
+    <link rel="modulepreload" crossorigin href="./assets/remark-github-blockquote-alert-8cef172c.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-chunked-6f054bfc.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-combine-extensions-34ef5cdc.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-character-c2e05b35.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-extension-gfm-autolink-literal-8a85e3f8.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-factory-space-d1556c33.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-normalize-identifier-dfdf0387.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-classify-character-e6f2af83.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-resolve-all-8a85a8df.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-subtokenize-df14a385.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-factory-destination-61e3e50f.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-factory-label-3c24794b.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-factory-title-4ecadfa4.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-factory-whitespace-d4a599a3.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-html-tag-name-eaa6d7c0.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-core-commonmark-c07aab3d.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-extension-gfm-footnote-8cf02a4f.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-extension-gfm-strikethrough-29e1f4c9.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-extension-gfm-table-76f075a8.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-extension-gfm-task-list-item-fd9ad625.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-extension-gfm-298f896c.js">
+    <link rel="modulepreload" crossorigin href="./assets/ccount-97b3fed9.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-find-and-replace-b2f01ca3.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-gfm-autolink-literal-9953eda7.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-gfm-footnote-31843ff4.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-gfm-strikethrough-02821e6f.js">
+    <link rel="modulepreload" crossorigin href="./assets/markdown-table-e4bb1f36.js">
+    <link rel="modulepreload" crossorigin href="./assets/longest-streak-062c506f.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-to-string-bfd41500.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-phrasing-2f08fe12.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-to-markdown-0c832652.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-gfm-table-588424c3.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-gfm-task-list-item-90dca6dd.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-gfm-1f81a492.js">
+    <link rel="modulepreload" crossorigin href="./assets/remark-gfm-20e428bd.js">
+    <link rel="modulepreload" crossorigin href="./assets/bail-0fe607cf.js">
+    <link rel="modulepreload" crossorigin href="./assets/extend-c40a5e11.js">
+    <link rel="modulepreload" crossorigin href="./assets/trough-69dd48ea.js">
+    <link rel="modulepreload" crossorigin href="./assets/unist-util-stringify-position-7b16d8bf.js">
+    <link rel="modulepreload" crossorigin href="./assets/vfile-message-9c3a211a.js">
+    <link rel="modulepreload" crossorigin href="./assets/vfile-33e078b6.js">
+    <link rel="modulepreload" crossorigin href="./assets/unified-e9e478f7.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-decode-numeric-character-reference-e471f84f.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-decode-string-c1ef5903.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-65d6e649.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-from-markdown-0e6c3239.js">
+    <link rel="modulepreload" crossorigin href="./assets/remark-parse-71140eaa.js">
+    <link rel="modulepreload" crossorigin href="./assets/@ungap-d56ab8cf.js">
+    <link rel="modulepreload" crossorigin href="./assets/micromark-util-sanitize-uri-ce9db7f5.js">
+    <link rel="modulepreload" crossorigin href="./assets/unist-util-position-bb1bbaf7.js">
+    <link rel="modulepreload" crossorigin href="./assets/trim-lines-00010efb.js">
+    <link rel="modulepreload" crossorigin href="./assets/mdast-util-to-hast-d1f82779.js">
+    <link rel="modulepreload" crossorigin href="./assets/remark-rehype-a950e1f8.js">
+    <link rel="modulepreload" crossorigin href="./assets/inline-style-parser-e2a37bce.js">
+    <link rel="modulepreload" crossorigin href="./assets/style-to-object-9435a2b9.js">
+    <link rel="modulepreload" crossorigin href="./assets/estree-util-is-identifier-name-e0420bc7.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-to-jsx-runtime-ebad87b4.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-url-attributes-cc94b481.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-markdown-f7386cc6.js">
+    <link rel="modulepreload" crossorigin href="./assets/html-void-elements-491fdcba.js">
+    <link rel="modulepreload" crossorigin href="./assets/entities-9253376c.js">
+    <link rel="modulepreload" crossorigin href="./assets/web-namespaces-a6665c10.js">
+    <link rel="modulepreload" crossorigin href="./assets/vfile-location-f7aeb950.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-from-parse5-d7b45037.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-to-parse5-206b4890.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-raw-8bc647f5.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-raw-73b755a6.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-ignore-14d04115.js">
+    <link rel="modulepreload" crossorigin href="./assets/github-slugger-15b5d832.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-heading-rank-7e277c28.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-slug-66bdf6f7.js">
+    <link rel="modulepreload" crossorigin href="./assets/hast-util-is-element-29e512ec.js">
+    <link rel="modulepreload" crossorigin href="./assets/rehype-autolink-headings-df90c626.js">
+    <link rel="modulepreload" crossorigin href="./assets/@uiw-fbcd8db3.js">
+    <link rel="modulepreload" crossorigin href="./assets/dayjs-83ab33dc.js">
+    <link rel="modulepreload" crossorigin href="./assets/i18next-30b8d63f.js">
+    <link rel="modulepreload" crossorigin href="./assets/i18next-browser-languagedetector-fca6a14c.js">
+    <link rel="modulepreload" crossorigin href="./assets/localforage-660b2602.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-i18next-0e383b52.js">
+    <link rel="modulepreload" crossorigin href="./assets/scheduler-765c72db.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dom-f42ccf45.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-query-4ad05a68.js">
+    <link rel="modulepreload" crossorigin href="./assets/@remix-run-dce5b06c.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-router-6caf0c27.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-router-dom-9dc85496.js">
+    <link rel="modulepreload" crossorigin href="./assets/classnames-c5f7966c.js">
+    <link rel="modulepreload" crossorigin href="./assets/@emotion-c0b5c018.js">
+    <link rel="modulepreload" crossorigin href="./assets/stylis-5efc5547.js">
+    <link rel="modulepreload" crossorigin href="./assets/@ctrl-fb5a5473.js">
+    <link rel="modulepreload" crossorigin href="./assets/@openim-b42991a8.js">
+    <link rel="modulepreload" crossorigin href="./assets/tslib-2295a9e7.js">
+    <link rel="modulepreload" crossorigin href="./assets/lodash-45a63edf.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-fast-compare-8fc01d60.js">
+    <link rel="modulepreload" crossorigin href="./assets/resize-observer-polyfill-0f9f8adb.js">
+    <link rel="modulepreload" crossorigin href="./assets/ahooks-087edcb4.js">
+    <link rel="modulepreload" crossorigin href="./assets/clsx-8a2321ee.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-image-file-resizer-082b4f54.js">
+    <link rel="modulepreload" crossorigin href="./assets/open-im-sdk-wasm-d275cb6c.js">
+    <link rel="modulepreload" crossorigin href="./assets/use-sync-external-store-21b41d34.js">
+    <link rel="modulepreload" crossorigin href="./assets/zustand-389b6932.js">
+    <link rel="modulepreload" crossorigin href="./assets/axios-9cbf0d09.js">
+    <link rel="modulepreload" crossorigin href="./assets/uuid-4a60fe23.js">
+    <link rel="modulepreload" crossorigin href="./assets/date-fns-ddf8a5f4.js">
+    <link rel="modulepreload" crossorigin href="./assets/mitt-f7ef348c.js">
+    <link rel="modulepreload" crossorigin href="./assets/compute-scroll-into-view-e3f0ecc2.js">
+    <link rel="modulepreload" crossorigin href="./assets/scroll-into-view-if-needed-582d6ca4.js">
+    <link rel="modulepreload" crossorigin href="./assets/throttle-debounce-87e7e444.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-virtuoso-ece04c36.js">
+    <link rel="modulepreload" crossorigin href="./assets/prop-types-08c7c3df.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-draggable-6c3d17fb.js">
+    <link rel="modulepreload" crossorigin href="./assets/livekit-client-bb1568a6.js">
+    <link rel="modulepreload" crossorigin href="./assets/loglevel-52fed41a.js">
+    <link rel="modulepreload" crossorigin href="./assets/rxjs-eb9efe3f.js">
+    <link rel="modulepreload" crossorigin href="./assets/lodash.debounce-437ec0ef.js">
+    <link rel="modulepreload" crossorigin href="./assets/usehooks-ts-f5852a9b.js">
+    <link rel="modulepreload" crossorigin href="./assets/@livekit-a264025c.js">
+    <link rel="modulepreload" crossorigin href="./assets/toggle-selection-93f4ad84.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-to-clipboard-8651a7ed.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-use-7b72ee3d.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-resizable-panels-8afeaa56.js">
+    <link rel="modulepreload" crossorigin href="./assets/xgplayer-791f2daf.js">
+    <link rel="modulepreload" crossorigin href="./assets/twemoji-540bbbe7.js">
+    <link rel="modulepreload" crossorigin href="./assets/lodash-es-db56b0a0.js">
+    <link rel="modulepreload" crossorigin href="./assets/@ckeditor-b393bf11.js">
+    <link rel="modulepreload" crossorigin href="./assets/color-name-b7949e8c.js">
+    <link rel="modulepreload" crossorigin href="./assets/color-convert-d47c3cb3.js">
+    <link rel="modulepreload" crossorigin href="./assets/emoji-picker-element-f6bf587d.js">
+    <link rel="stylesheet" href="./assets/@uiw-563026a5.css">
+    <link rel="stylesheet" href="./assets/@livekit-c8ce9e46.css">
+    <link rel="stylesheet" href="./assets/xgplayer-baaff72a.css">
+    <link rel="stylesheet" href="./assets/@ckeditor-0c80e972.css">
+    <link rel="stylesheet" href="./assets/index-6c1d36f0.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script src="./wasm_exec.js"></script>
+  </body>
+</html>
