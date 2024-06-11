@@ -7,7 +7,6 @@ Chatbot-GPT leverages OpenIM’s webhooks for seamless integration across messag
 <img style="display: block; margin: auto; width: 70%;" src="./doc/screen_1.jpg">
 </div>
 
-
 # Contents
 
 - [Features](#features)
@@ -27,20 +26,61 @@ Chatbot-GPT leverages OpenIM’s webhooks for seamless integration across messag
   - [Register an account](#register-an-account)
   - [Login and find the Bot](#login-and-find-the-bot)
 
-
 ## Features
+
 - **Integrated LLM Support**: Incorporates both UnionLLM and LiteLLM, enabling simultaneous access to multiple large language models.
 - **Quick Setup**: Deploys production-level conversational service robots in just five minutes.
 - **Real-World Application**: Optimally designed for real-time customer service systems to tackle genuine business challenges.
 - **Attractive UI**: Offers a customizable and visually compelling user interface.
 
-
 ## Online Retrieval Architecture
 
 <div align="center">
-<img style="display: block; margin: auto; width: 100%;" src="./doc/openim.jpg">
+<img style="display: block; margin: auto;" src="./doc/chatbot-gpt.drawio.png">
 </div>
 
+## Deploy the OpenIM Service
+
+### Step 1: Download repository code
+
+Clone the repository:
+
+```shell
+git clone https://github.com/openimsdk/openim-docker && cd openim-docker
+```
+
+### Step 2: Configure variables of .env
+
+Modify the `.env` file to set up the external IP address for the MinIO and Grafana services.
+
+```shell
+# Set the external access address for MinIO service (external IP or domain)
+MINIO_EXTERNAL_ADDRESS="http://external_ip:10005"
+# Set the external access address for Grafana service (external IP or domain)
+GRAFANA_URL="http://external_ip:13000/"
+```
+
+### Step 3: Configure webhooks for Chatbot-GPT
+
+Modify openim-server environment variables in `docker-compose.yaml`.
+
+```shell
+    openim-server:
+      ...
+      environment:
+        - IMENV_WEBHOOKS_URL=http://127.0.0.1:9000/open_chatbot
+        - IMENV_WEBHOOKS_AFTERSENDSINGLEMSG_ENABLE=true
+        - IMENV_WEBHOOKS_AFTERSENDGROUPMSG_ENABLE=true
+        ...
+```
+
+### Step 4: Start the OpenIM Service
+
+```shell
+docker compose up -d
+```
+
+ > More details about OpenIM deploy, please refer to [OpenIM Docs](https://docs.openim.io/guides/gettingstarted/dockercompose)
 
 ## Deploy the Chatbot-GPT Service
 
@@ -54,8 +94,7 @@ git clone https://github.com/gpt-open/chatbot-gpt.git && cd chatbot-gpt
 
 ### Step 2: Configure variables of .env
 
-Before starting the Chatbot-GPT service, you need to modify the related configurations for the program to initialize correctly. 
-
+Before starting the Chatbot-GPT service, you need to modify the related configurations for the program to initialize correctly.
 
 ```shell
 cp env_example .env
@@ -74,13 +113,10 @@ MAX_HISTORY_SESSION_LENGTH=3
 
 > [!NOTE]
 > Please modify the `GET_TOKEN_URL`, `ADD_BOT_URL`, `UPDATE_BOT_URL`, `SEND_MSG_URL`, and `TOKEN_EXPIRE_DAYS` in conjunction with the **OpenIM Server** configuration.
-> 
-
 
 ### Step 3: Deploy Chatbot-GPT
 
 #### Deploy Chatbot-GPT using Docker
-
 
 ```shell
 docker-compose up --build
@@ -90,7 +126,6 @@ docker-compose up --build
 
 > [!NOTE]
 > Please use Python version 3.10.x or above.
-> 
 
 ##### Set up the Python running environment
 
@@ -112,7 +147,7 @@ source myenv/bin/activate
 
 ###### Install dependencies with pip
 
-Once the virtual environment is activated, you can use `pip` to install the required dependencies. 
+Once the virtual environment is activated, you can use `pip` to install the required dependencies.
 
 ```shell
 pip install -r requirements.txt
@@ -121,12 +156,11 @@ pip install -r requirements.txt
 ##### Upload Bot configuration
 
 > [!NOTE]
-> Chatbot-GPT can integrate any number of LLM Bots. 
-> 
+> Chatbot-GPT can integrate any number of LLM Bots.
+>
 > Please refer to `bot_config.yaml` and modify this configuration file according to your actual needs.
-> 
+>
 > **`userID`** in `bot_config.yaml` must be unique.
-> 
 
 ```yml
 robots:
@@ -169,7 +203,6 @@ robots:
       faceURL: "https://avatars.githubusercontent.com/u/148330874?s=200&v=4"
 ```
 
-
 ```shell
 python3 upload_bot_config.py
 ```
@@ -191,9 +224,9 @@ sh start.sh
 ```
 
 > [!NOTE]
+>
 > - The service port for Chatbot-GPT is **`9000`**. During the first test, please try not to change the port so that you can quickly experience the entire product process.
 > - We recommend starting the Chatbot-GPT service using **`start.sh`** in multi-process mode for a smoother user experience.
-
 
 ## Register Chatbot-GPT
 
@@ -212,8 +245,3 @@ Log in to Chatbot-GPT using your username and password, then you can add friends
 <div align="center">
 <img style="display: block; margin: auto; width: 70%;" src="./doc/find_bot.jpg">
 </div>
-
-
-
-
-
