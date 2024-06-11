@@ -49,7 +49,7 @@ Chatbot-GPT leverages OpenIM’s webhooks for seamless integration across messag
 Clone the repository:
 
 ```shell
-git clone https://github.com/gpt-open/chatbot-gpt.git && cd chatbot-gpt.git
+git clone https://github.com/gpt-open/chatbot-gpt.git && cd chatbot-gpt
 ```
 
 ### Step 2: Configure variables of .env
