@@ -122,7 +122,9 @@ pip install -r requirements.txt
 
 > [!NOTE]
 > Chatbot-GPT can integrate any number of LLM Bots. 
+> 
 > Please refer to `bot_config.yaml` and modify this configuration file according to your actual needs.
+> 
 > **`userID`** in `bot_config.yaml` must be unique.
 > 
 
