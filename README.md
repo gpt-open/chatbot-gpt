@@ -11,6 +11,7 @@ Chatbot-GPT leverages OpenIM’s webhooks for seamless integration across messag
 
 - [Features](#features)
 - [Online Retrieval Architecture](#online-retrieval-architecture)
+- [Deploy the OpenIM Service](#deploy-the-openim-service)
 - [Deploy the Chatbot-GPT Service](#deploy-the-chatbot-gpt-service)
   - [Step 1: Download repository code](#step-1-download-repository-code)
   - [Step 2: Configure variables of .env](#step-2-configure-variables-of-env)
